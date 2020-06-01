@@ -18,8 +18,3 @@ class Hls{
   external on(String event,Function callback);
 
 }
-@JS()
-class EventEmitter{
-  external factory EventEmitter();
-
-}

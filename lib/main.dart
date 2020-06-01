@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   HlsVideoPlayer player;
-
+  HlsVideoPlayer hlsVideoPlayer =
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -28,12 +28,7 @@ class _MyAppState extends State<MyApp> {
               'videoPlayer-1'
             ),
           ),
-          RaisedButton(
-            child: Text("Play"),
-            onPressed: (){
-              player.videoElement.play();
-            },
-          )
+
         ],
       ),
     );
